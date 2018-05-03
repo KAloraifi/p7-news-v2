@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ListItemHeight"
+    android:background="@color/listItemBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/ListPadding">
+
+    <LinearLayout style="@style/ArticleSectionTitleContainer">
+
+        <TextView
+            android:id="@+id/article_section"
+            style="@style/ArticleSection"
+            tools:text="Section" />
+
+        <TextView
+            android:id="@+id/article_title"
+            style="@style/ArticleTitle"
+            tools:text="This is a very very very long title, just for testing purposes" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/ArticleAuthorDateContainer">
+
+        <TextView
+            android:id="@+id/article_author"
+            style="@style/ArticleAuthorDate"
+            tools:text="Author" />
+
+        <TextView
+            android:id="@+id/article_date"
+            style="@style/ArticleAuthorDate"
+            android:gravity="right"
+            tools:text="Date" />
+
+    </LinearLayout>
+
+</LinearLayout>
